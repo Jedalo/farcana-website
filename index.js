@@ -3,13 +3,17 @@ var swiper = new Swiper(".mySwiper", {
     centeredSlides: true,
     autoplay: {
       delay: 2500,
-      disableOnInteraction: false,
+      disableOnInteraction: true,
     },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
-  });
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+   });  
 
   let menu = document.querySelector(".menu-icon");
   let navbar = document.querySelector(".navbar");
@@ -27,7 +31,7 @@ var swiper = new Swiper(".mySwiper", {
        const animate = ScrollReveal({
         origin: "top",
         distance: "60px",
-        duration: "2500",
+        duration: "1500",
         delay: "400",
        })
 
