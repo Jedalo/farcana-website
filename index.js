@@ -37,5 +37,5 @@ var swiper = new Swiper(".mySwiper", {
 
        animate.reveal(".nav");
        animate.reveal(".home-text", {origin: "left"});
-       animate.reveal(".home-img", {origin: "bottom"});
+       animate.reveal(".homeimg", {origin: "bottom"});
        animate.reveal(".ser-box, .product-box, .team-box, .book-data", {interval: 100});
